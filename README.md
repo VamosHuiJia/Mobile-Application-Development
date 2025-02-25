@@ -8,3 +8,5 @@
 ![Bai 2_2](https://github.com/user-attachments/assets/099b0df5-ae3f-4bb8-96c1-7c7a3f49c4ac)
 ![Lesson 5](https://github.com/user-attachments/assets/de12bc24-74da-4a98-b4d3-c0d9eab1133c)
 ![Bai 4](https://github.com/user-attachments/assets/c0eea761-b074-4715-bb96-b91e0d19242c)
+![Bai 8_1](https://github.com/user-attachments/assets/d0e54ded-2179-453b-a562-93480e9ac569)
+![Bai 8_2](https://github.com/user-attachments/assets/ee27edbb-aa59-4335-965b-b12061dd6050)

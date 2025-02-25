@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 const LoginScreen = () => {
   const [phoneNumber, setPhoneNumber] = useState('');
   const [errorMessage, setErrorMessage] = useState('');
+  const navigation = useNavigation(); // Thêm hook điều hướng
 
   const validatePhoneNumber = (phone) => {
     const phoneRegex = /^(0[3|5|7|8|9])[0-9]{8}$/;
@@ -17,13 +19,13 @@ const LoginScreen = () => {
 
   const handleContinue = () => {
     if (validatePhoneNumber(phoneNumber)) {
-      alert(`Số điện thoại: ${phoneNumber}`);
+      navigation.navigate('Home'); // Điều hướng đến HomeScreen
     }
   };
 
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Đăng nhập</Text>
+      
       <View style={styles.contentContainer}>
         <Text style={styles.subtitle}>Nhập số điện thoại</Text>
         <Text style={styles.description}>
@@ -72,7 +74,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     width: '100%',
     alignItems: 'center',
-
   },
   subtitle: {
     fontSize: 16,

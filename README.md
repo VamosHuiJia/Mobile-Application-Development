@@ -1,4 +1,4 @@
-![2dfb048c-de4e-48ce-b337-537a8a899167](https://github.com/user-attachments/assets/7e74f5a8-e09e-443c-9c88-37e4d9202c67)# Mobile-Application-Development.
+# Mobile-Application-Development.
 # Nguyen Gia Huy
 ### MSV: 22810310338
 ## Ket qua

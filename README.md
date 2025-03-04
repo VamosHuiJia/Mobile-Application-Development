@@ -1,7 +1,7 @@
 # Mobile-Application-Development.
 # Nguyen Gia Huy
 ### MSV: 22810310338
-## Ket qua
+## Anh bai lam
 
 | Bai 1 | Bai 2_1 | Bai 2_2 |
 |-------|---------|---------|

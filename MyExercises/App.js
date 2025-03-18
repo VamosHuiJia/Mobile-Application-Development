@@ -9,20 +9,21 @@ import ValidateForm from './src/Bai4ValidateForm'
 import HomeScreen from './src/HomeScreen';
 
 import { NavigationContainer } from '@react-navigation/native';
-import AuthStack from './src/Navigation/AuthStack';
-import MainStack from './src/Navigation/MainStack';
-import { AppProvider, AppContext } from './src/Context/AppContext';
+// import AuthStack from './src/Navigation/AuthStack';
+// import MainStack from './src/Navigation/MainStack';
+import { AppProvider } from './src/Context/AppContext';
+import AppNavigator from './src/Navigation/AppNavigator';
 
 const Stack = createStackNavigator();
 
-const AppNavigator = () => {
-  const { isLoggedIn } = useContext(AppContext);
-  return (
-    <NavigationContainer>
-      {isLoggedIn ? <MainStack /> : <AuthStack />}
-    </NavigationContainer>
-  );
-};
+// const AppNavigator = () => {
+//   const { isLoggedIn } = useContext(AppContext);
+//   return (
+//     <NavigationContainer>
+//       {isLoggedIn ? <MainStack /> : <AuthStack />}
+//     </NavigationContainer>
+//   );
+// };
 
 // const App = () => {
 //   // return <LoginScreen />;

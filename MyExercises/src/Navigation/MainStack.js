@@ -9,26 +9,26 @@ const Tab = createBottomTabNavigator();
 const MainStack = () => {
   return (
     <Tab.Navigator
-      screenOptions={({ route }) => ({
-        headerShown: false,
-        tabBarIcon: ({ color, size }) => {
-          let iconName;
+        screenOptions={({ route }) => ({
+            headerShown: false,
+            tabBarIcon: ({ color, size }) => {
+                let iconName;
 
-          if (route.name === "Explorer") {
-            iconName = "home"; // Icon ngôi nhà
-          } else if (route.name === "Account") {
-            iconName = "user"; // Icon tài khoản
-          }
+                if (route.name === "Explorer") {
+                    iconName = "home"; // Icon ngôi nhà
+                } else if (route.name === "Account") {
+                    iconName = "user"; // Icon tài khoản
+                }
 
-          return <FontAwesome name={iconName} size={size} color={color} />;
-        },
-        tabBarActiveTintColor: "orange", // Màu khi tab được chọn
-        tabBarInactiveTintColor: "gray", // Màu khi tab không được chọn
-        tabBarStyle: { paddingBottom: 5, height: 60 }, // Căn chỉnh padding
-      })}
+                return <FontAwesome name={iconName} size={size} color={color} />;
+            },
+            tabBarActiveTintColor: "orange", // Màu khi tab được chọn
+            tabBarInactiveTintColor: "gray", // Màu khi tab không được chọn
+            tabBarStyle: { paddingBottom: 5, height: 60 }, // Căn chỉnh padding
+        })}
     >
-      <Tab.Screen name="Explorer" component={HomeScreen} />
-      <Tab.Screen name="Account" component={AccountScreen} />
+        <Tab.Screen name="Explorer" component={HomeScreen} />
+        <Tab.Screen name="Account" component={AccountScreen} />
     </Tab.Navigator>
   );
 };
